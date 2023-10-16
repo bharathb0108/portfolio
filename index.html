@@ -1,0 +1,254 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+	<meta charset="UTF-8"> 
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+	<title>Bharath B</title> 
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/bf8210554a.js" crossorigin="anonymous"></script>
+</head> 
+<body> 
+	<div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Achievements</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Computer Science Engineer</p>
+                <h1>Hi, I'm <span>Bharath</span><br> From Mangaluru, India</h1>
+            </div>
+        </div>
+    </div>
+    <!-----------------about---------------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/user.png">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Ambitious and highly driven Software Engineer looking for a challenging position where i can apply my knowledge and advance learning to foster personal and professional development. Possess the ability to learn new technologies.</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span><b>Languages</b></span><br>Java | SQL | HTML5 | CSS | JavaScript | Python</li>
+                            <li><span><b>Operating System</b></span><br>Windows | Linux</li>
+                            <li><span><b>Database Software</b></span><br>MySQL | Oracle Database</li>
+                            <li><span><b>Soft Skills</b></span><br>Leadership | Teamwork | Communication | Work Ethics | Problem Solving</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span><b>Feb, 2023</b></span><br>Internship at Compsoft Technology Solutions</li>
+                            <li><span><b>June, 2023 -Present</b></span><br>Java Full- Stack development training at Pentagon Space</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span><b>2016-2017 | SSLC | KSEEB</b></span><br>Knanaya Jyothi English Medium High School, Kadaba</li>
+                            <li><span><b>2018-2019 | PCMC | Department of PU, Karnataka</b></span><br>Sri Ram Kunjeshwara College, Ramakunja Post, Puttur</li>
+                            <li><span><b>2019-2023 | Computer Science and Engineering | VTU</b></span><br>Sahyadri college of Engineering and Management, Mangaluru</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--------------------services--------------------->
+    <div id="services">
+       <div class="container">
+            <h1 class="sub-title">My Achievements</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p>Lorem ipsum dolor sit aet kskksk sdddededdn dhhh</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop-simple"></i>
+                    <h2>UI/UX Design</h2>
+                    <p>Lorem ipsum dolor sit aet kskksk sdddededdn dhhh</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-app-store"></i>
+                    <h2>App Design</h2>
+                    <p>Lorem ipsum dolor sit aet kskksk sdddededdn dhhh</p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+       </div> 
+    </div>
+    <!--------------------portfolio--------------->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Projects</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/temple.jpg">
+                    <div class="layer">
+                        <h3>Temple Management System</h3>
+                        <p>The app developed to assure effective devotee service</p>
+                        
+                        <a class="popup-trigger" data-message="A Temple Management System designed using MySQL on the backend
+                        and JFrame on the front-end, linked together using JDBC, proposed to
+                        override problems prevailing in the practiced manual system."><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/car.png">
+                    <div class="layer">
+                        <h3>Car Rental Application</h3>
+                        <p>Application designed to help user to rent and book cars while travelling.</p>
+                        <a class="popup-trigger" data-message="An Android Application developed using Android Studio IDE. The UI is
+                        created using XML and Java. Firebase Real-time Database is used on the
+                        backend."><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/cancer.jpeg" >
+                    <div class="layer">
+                        <h3>Re-construction and analysis of Cancer specific gene</h3>
+                        <p>Using gene expression matrix and gene regulatory network</p>
+                        <a class="popup-trigger" data-message="Re-modelled, simulated and analyzed cancer-specific gene regulatory networks from gene expression matrix to uncover crucial insights into
+                        cancer progression."><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>  
+                </div>     
+            </div>
+        </div>
+    </div>
+    <div class="overlay" id="overlay">
+    <div class="popup">
+        <span class="close" id="close-popup">&times;</span>
+        <p id="popup-message"></p>
+    </div>
+</div>
+
+    <!----------------contact---------------->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i> bharathb0108@gmail.com</p>
+                    <p><i class="fa-solid fa-phone-volume"></i> +91 *******753</p>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/bharath-b-130294215/"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://twitter.com/Bharath_B_"><i class="fa-brands fa-square-twitter"></i></a>
+                        <a href="https://github.com/bharathb0108/"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                    <a href="images/Bharath_B.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright © <span>B</span>harath B.</p>
+        </div>
+    </div>
+<script>
+    var tablinks=document.getElementsByClassName("tab-links");
+    var tabcontents=document.getElementsByClassName("tab-contents");
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+<script>
+    var sidemeu=document.getElementById("sidemenu");
+    function openmenu(){
+        sidemeu.style.right="0"
+    }
+    function closemenu(){
+        sidemeu.style.right="-200px"
+    }
+</script>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbwuzeLN7Fjzw1lxwTcocaubNiJ5EqANmPC8InDH_U6e_-Ss5K-QEA9ivdCurfr2leOy/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg=document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML ="Message sent Successfully"
+            setTimeout(function(){
+                msg.innerHTML=""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+</script>
+<script>
+    // Get the elements
+    const overlay = document.getElementById("overlay");
+    const popupMessage = document.getElementById("popup-message");
+    const closePopup = document.getElementById("close-popup");
+    const popupTriggers = document.querySelectorAll(".popup-trigger");
+
+    // Function to open the popup with the given message
+    function openPopup(message) {
+        overlay.style.display = "block";
+        popupMessage.textContent = message;
+    }
+
+    // Add click event listeners to each image trigger
+    popupTriggers.forEach((trigger) => {
+        trigger.addEventListener("click", () => {
+            const message = trigger.getAttribute("data-message");
+            openPopup(message);
+            document.querySelector('#header').style.filter = 'blur(10px)';
+            document.querySelector('#about').style.filter = 'blur(10px)';
+            document.querySelector('#services').style.filter = 'blur(10px)';
+            document.querySelector('#portfolio').style.filter = 'blur(10px)';
+            document.querySelector('#contact').style.filter = 'blur(10px)';
+        });
+    });
+
+    // Close the popup when clicking the close button
+    closePopup.addEventListener("click", () => {
+        overlay.style.display = "none";
+        document.querySelector('#header').style.filter = 'blur(0)';
+        document.querySelector('#about').style.filter = 'blur(0)';
+        document.querySelector('#services').style.filter = 'blur(0)';
+        document.querySelector('#portfolio').style.filter = 'blur(0)';
+        document.querySelector('#contact').style.filter = 'blur(0)';
+    });
+</script>
+
+
+</body> 
+</html> 
